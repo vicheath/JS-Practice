@@ -16,11 +16,10 @@ console.log(n4*n3);
 
 // Check two: at least two odd numbers
 // Here, we use modulus to check if something is odd.
-// Since % 2 is 0 if even and 1 if odd, we can use
-// arithmetic to count the total number of odd numbers.
-const isTwoOdd = (n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2;
-console.log(n1 % 2);
-console.log(n4 % 2);
+
+const isThisNumberOdd = num1 % === 0: //10 % 2 => 0 
+console.log(isThisNumberOdd)
+
 
 // Check three: no number larger than 25
 // This time, we use the OR operator to check
