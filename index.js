@@ -18,6 +18,8 @@ console.log(divFive);
 const smolBig = (n1 > n4) 
 console.log(smolBig)
 
+const chainGang = ((n2 - n1) * n3) / n4 == 20
+console.log(chainGang)
 
 // Check two: at least two odd numbers
 // Here, we use modulus to check if something is odd.
