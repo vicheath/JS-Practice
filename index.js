@@ -104,3 +104,4 @@ const displayResults = (speed, fuelNeeded, tripDuration, budgetEnough) => {
     console.log(`Is budget enough? ${budgetEnough ? 'Yes' : 'No'}`);
     console.log('------------------------');
 };
+
