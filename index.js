@@ -7,8 +7,10 @@ const n4 = 5;
 // Check one: add up to 50
 // This is a fairly simple operation using
 // arithmetic operators and a comparison.
+// (n1 + n2 + n3 + n4) / 5 = 
 const isSum50 = (n1 + n2 + n3 + n4) == 50;
 const sum = n1 + n2 + n3 + n4;
+console.log(n1)
 console.log(isSum50);
 console.log(n1>n4);
 console.log(n2-n1);
@@ -16,9 +18,11 @@ console.log(n4*n3);
 
 // Check two: at least two odd numbers
 // Here, we use modulus to check if something is odd.
+// Since % 2 is 0 if even and 1 if odd, we can use
+// arithmetic to count the total number of odd numbers.
+const isTwoOdd = (n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2;
+console.log(isTwoOdd)
 
-const isThisNumberOdd = num1 % === 0: //10 % 2 => 0 
-console.log(isThisNumberOdd)
 
 
 // Check three: no number larger than 25
