@@ -62,3 +62,45 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   ((n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2) && 
   !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) && 
   (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
+
+//The distance of the trip, in total, is 1,500 miles.
+//Your car’s fuel efficiency is as follows:
+  //At 55 miles per hour, you get 30 miles per gallon.
+  //At 60 miles per hour, you get 28 miles per gallon.
+  //At 75 miles per hour, you get 23 miles per gallon.
+//You have a fuel budget of $175.
+//The average cost of fuel is $3 per gallon.
+
+//Set up a program to answer the following questions:
+  //How many gallons of fuel will you need for the entire trip?
+  //Will your budget be enough to cover the fuel expense?
+  //How long will the trip take, in hours?
+//Compare the results when traveling at an average of 55, 60, and 75 miles per hour. Which makes the most sense for the trip?
+
+// Constants
+const totalM  = 1500; // Total distance of the trip in miles
+const fuelBudget = 175; // Budget for fuel in dollars
+const avgFuel = 3; // Average cost of fuel per gallon in dollars
+
+// Car's fuel efficiency at different speeds
+const efficiency55 = 30;    // miles per gallon at 55 mph
+const efficiency60 = 28;    // miles per gallon at 60 mph
+const efficiency75 = 23;    // miles per gallon at 75 mph
+
+// Function to calculate fuel needed
+const calculateFuelNeeded = speed => totalDistance / speed;
+
+// Function to calculate trip duration
+const calculateTripDuration = speed => totalDistance / speed;
+
+// Function to check if budget is enough
+const isBudgetEnough = (fuelNeeded, budget) => fuelNeeded * costPerGallon <= budget;
+
+// Function to display results
+const displayResults = (speed, fuelNeeded, tripDuration, budgetEnough) => {
+    console.log(`Results for speed ${speed} mph:`);
+    console.log(`Fuel needed: ${fuelNeeded.toFixed(2)} gallons`);
+    console.log(`Trip duration: ${tripDuration.toFixed(2)} hours`);
+    console.log(`Is budget enough? ${budgetEnough ? 'Yes' : 'No'}`);
+    console.log('------------------------');
+};
